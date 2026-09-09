@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Kishor Sarma</title>
 
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #6a5acd);
+    overflow: hidden;
+}
+
+.card {
+    width: 90%;
+    max-width: 430px;
+    padding: 35px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    animation: glow 1.5s infinite alternate;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 0 25px rgba(255,255,255,0.8);
+    margin: 10px auto 20px;
+}
+
+.message {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 25px;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background: white;
+    color: #ff4f81;
+    font-weight: bold;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px white; }
+    to { text-shadow: 0 0 25px white, 0 0 40px pink; }
+}
+
+.balloon {
+    position: absolute;
+    font-size: 45px;
+    animation: float 6s infinite ease-in-out;
+}
+
+.b1 { left: 5%; top: 15%; }
+.b2 { right: 5%; top: 25%; animation-delay: 1s; }
+.b3 { left: 10%; bottom: 10%; animation-delay: 2s; }
+.b4 { right: 10%; bottom: 15%; animation-delay: 3s; }
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="balloon b1">🎈</div>
+<div class="balloon b2">🎈</div>
+<div class="balloon b3">🎈</div>
+<div class="balloon b4">🎈</div>
+
+<div class="card">
+
+    <h1>🎉 HAPPY BIRTHDAY 🎉</h1>
+
+    <!-- Replace kishor.jpg with Kishor's photo -->
+    <img src="kishor.jpg" class="photo" alt="Kishor Sarma">
+
+    <h2>🎂 Kishor Sarma 🎂</h2>
+
+    <p class="message">
+        Wishing you a very Happy Birthday, Kishor! ❤️<br><br>
+        May your life always be filled with happiness,
+        success, good health and beautiful memories. ✨
+        <br><br>
+        Have an amazing day and keep smiling always! 🥳🎁
+    </p>
+
+    <button onclick="alert('🎂 Happy Birthday Kishor Sarma! 🎉')">
+        🎁 Open Birthday Wish
+    </button>
+
+</div>
+
+</body>
+</html>
